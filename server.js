@@ -18,7 +18,10 @@ app.get("/notes", (req, res) => {
   res.send(notes.display());
 });
 
-app.post("/notes", (req, res) => {});
+app.post("/notes", (req, res) => {
+  notes.create(req.body.title, req.body.body)
+  res.json(req.body)
+});
 
 app.listen(port);
 
