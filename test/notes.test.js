@@ -1,4 +1,4 @@
-const Notes = require("./notes");
+const Notes = require("../lib/notes");
 
 describe(Notes, () => {
   let note = new Notes();
